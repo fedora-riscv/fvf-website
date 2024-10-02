@@ -5,7 +5,7 @@ export const teamMembers: TeamMember[] = [
         name: "Wei Fu",
         title: "Principal Software Engineer",
         company: "Red Hat",
-        avatarSrc: "/avatars/fuwei.jpg",
+        avatarSrc: "/nextjs-github-pages/avatars/fuwei.jpg",
         links: {
             github: {
                 url: "https://github.com/tekkamanninja/",
@@ -20,7 +20,7 @@ export const teamMembers: TeamMember[] = [
     {
         name: "U2FsdGVkX1",
         company: "PLCT Lab",
-        avatarSrc: "/avatars/U2FsdGVkX1.jpg",
+        avatarSrc: "/nextjs-github-pages/avatars/U2FsdGVkX1.jpg",
         links: {
             github: {
                 url: "https://github.com/U2FsdGVkX1",
@@ -30,7 +30,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "Guoguo",
-        avatarSrc: "/avatars/guoguo.ico",
+        avatarSrc: "/nextjs-github-pages/avatars/guoguo.ico",
         company: "PLCT Lab",
         links: {
             github: {
@@ -45,7 +45,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "Ahei",
-        avatarSrc: "/avatars/ahei.jpg",
+        avatarSrc: "/nextjs-github-pages/avatars/ahei.jpg",
         links: {
             github: {
                 url: "https://github.com/aahei/",
@@ -55,7 +55,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "catme0w",
-        avatarSrc: "/avatars/catme0w.jpg",
+        avatarSrc: "/nextjs-github-pages/avatars/catme0w.jpg",
         company: "PLCT Lab",
         links: {
             github: {
@@ -66,7 +66,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "Tianyi Wei",
-        avatarSrc: "/avatars/weitianyi.jpg",
+        avatarSrc: "/nextjs-github-pages/avatars/weitianyi.jpg",
         company: "USYD",
         links: {
             linkedin: {
@@ -81,25 +81,25 @@ export const websites: Website[] = [
     {
         name: "images.fedoravforce.com",
         description: "Download Fedora images for your RISC-V hardware.",
-        image: "/images-website-screenshot.png?height=300&width=400",
+        image: "/nextjs-github-pages/images-website-screenshot.png?height=300&width=400",
         link: "https://images.fedoravforce.com/"
     },
     {
         name: "Fedora RISC-V Packaging Stats",
         description: "Our progress on Fedora RISC-V packaging.",
-        image: "/stats-website-screenshot.png?height=300&width=400",
+        image: "/nextjs-github-pages/stats-website-screenshot.png?height=300&width=400",
         link: "https://openkoji.iscas.ac.cn/pub/stats/"
     },
     {
         name: "Our Blog",
         description: "Documentation related to Fedora RISC-V.",
-        image: "/blog-website-screenshot.png?height=300&width=400",
+        image: "/nextjs-github-pages/blog-website-screenshot.png?height=300&width=400",
         link: "https://blog.fedoravforce.com/zh/"
     },
     {
         name: "Upstream Status",
         description: "Fedora on RISC-V Upstream Status",
-        image: "/upstream-screenshot.png?height=300&width=400",
+        image: "/nextjs-github-pages/upstream-screenshot.png?height=300&width=400",
         link: "https://upstream.fedoravforce.com/"
     }
 ]

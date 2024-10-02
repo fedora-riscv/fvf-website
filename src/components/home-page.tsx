@@ -27,7 +27,7 @@ export function HomePage() {
         <section className="relative h-[50vh] flex items-center justify-center">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/hero2.jpg?height=1080&width=1920"
+              src="/nextjs-github-pages/hero2.jpg?height=1080&width=1920"
               alt="Hero Background"
               layout="fill"
               objectFit="cover"
@@ -124,7 +124,7 @@ export function HomePage() {
             <div className="flex items-center justify-center">
               <MailIcon className="mr-2" />
               <Image
-                src="/email.png"
+                src="/nextjs-github-pages/email.png"
                 alt="Email Address"
                 width={200}
                 height={30}
