@@ -100,7 +100,7 @@ export const websites: Website[] = [
         name: "Upstream Status",
         description: "Fedora on RISC-V Upstream Status",
         image: "/nextjs-github-pages/upstream-screenshot.png?height=300&width=400",
-        link: "https://upstream.fedoravforce.com/"
+        link: "https://upstream.fedoravforce.org/"
     }
 ]
 
