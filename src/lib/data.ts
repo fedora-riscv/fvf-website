@@ -40,8 +40,15 @@ export const teamMembers: TeamMember[] = [
         }
     },
     {
-        name: "Placeholder",
-        avatarSrc: "/avatar-placeholder.png?height=150&width=150",
+        name: "Milkice",
+        avatarSrc: "/avatars/milkice233.jpg",
+        company: "PLCT Lab",
+        links: {
+            github: {
+                url: "https://github.com/milkice233",
+                label: "@milkice233",
+            },
+        }
     },
     {
         name: "Ahei",
