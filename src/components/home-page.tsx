@@ -9,10 +9,19 @@ import { TeamMemberCard } from "@/components/team-member-card"
 export function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-primary text-primary-foreground py-4 fixed w-full z-10">
+      <header className="bg-primary text-primary-foreground py-1 fixed w-full z-10">
         <div className="container mx-auto px-4">
           <nav className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold">Fedora-V Force</h1>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/white-logo.png"
+                alt="Fedora-V Force"
+                width={150}
+                height={40}
+                className="h-16 w-auto"
+                priority
+              />
+            </Link>
             <div className="space-x-4">
               <Link href="#websites" className="hover:underline">Websites</Link>
               {/* <Link href="#news" className="hover:underline">News</Link> */}
