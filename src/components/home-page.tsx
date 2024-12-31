@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { MailIcon } from "lucide-react"
-import { teamMembers, websites, newsList, teamIntro } from "@/lib/data"
+import { teamMembers, websites, newsList, teamIntro, partners } from "@/lib/data"
 import { TeamMemberCard } from "@/components/team-member-card"
 
 export function HomePage() {
@@ -92,6 +92,34 @@ export function HomePage() {
           </div>
         </section>
 
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-4">Our Partners</h2>
+            <div className="flex flex-wrap justify-center items-center gap-24 max-w-4xl mx-auto">
+              {partners.map((partner) => (
+                <div key={partner.name} className="flex-shrink-0 w-full sm:w-auto">
+                  <a
+                    href={partner.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block transition-opacity hover:opacity-80 focus:opacity-80"
+                    aria-label={`${partner.name} Website`}
+                  >
+                    <Image
+                      src={partner.logo}
+                      alt={`${partner.name} logo`}
+                      width={240}
+                      height={80}
+                      className="max-w-full h-auto mx-auto"
+                    />
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
         {/* News Section */}
         {/* <section id="news" className="py-16 bg-background">
           <div className="container mx-auto px-4">
@@ -116,7 +144,7 @@ export function HomePage() {
           </div>
         </section> */}
 
-        <section id="team" className="py-16 bg-background">
+        <section id="team" className="py-16 bg-muted">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center">Team Members</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -127,7 +155,7 @@ export function HomePage() {
           </div>
         </section>
 
-        <section id="contact" className="py-16 bg-muted">
+        <section id="contact" className="py-16 bg-background">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8">Contact Us</h2>
             <div className="flex items-center justify-center">

@@ -1,4 +1,4 @@
-import { TeamMember, Website, News } from "./types";
+import { TeamMember, Website, News, Partner } from "./types";
 
 export const teamMembers: TeamMember[] = [
     {
@@ -111,11 +111,24 @@ export const websites: Website[] = [
     }
 ]
 
+export const partners: Partner[] = [
+    {
+        name: "RISC-V",
+        logo: "/partner-logo/riscv.svg",
+        link: "https://riscv.org/"
+    },
+    {
+        name: "milkV",
+        logo: "/partner-logo/milkv.png",
+        link: "https://milkv.io/"
+    },
+]
+
 export const newsList: News[] = [
     // {
     //   title: "Fedora",
     //   date: "Sep 20, 2024",
-    //   content: "Fedora FedoraFedora FedoraFedoraFedoraFedora FedoraFedoraFedora.",
+    //   content: "Fedora FedoraFedora FedoraFedoraFedoraFedoraFedora FedoraFedoraFedora.",
     // },
   ]
 
