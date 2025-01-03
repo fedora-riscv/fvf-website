@@ -119,15 +119,16 @@ export const partners: Partner[][] = [
         logo: "/partner-logo/rv2036.png",
         link: "https://rv2036.org/"
     }],
-    [{
-        name: "milkV",
-        logo: "/partner-logo/milkv.png",
-        link: "https://milkv.io/"
-    },
+    [
     {
         name: "Sipeed",
         logo: "/partner-logo/sipeed.png",
         link: "https://sipeed.com/"
+    },
+    {
+        name: "milkV",
+        logo: "/partner-logo/milkv.png",
+        link: "https://milkv.io/"
     },
     {
         name: "Radxa",
