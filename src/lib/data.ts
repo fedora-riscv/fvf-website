@@ -1,4 +1,4 @@
-import { TeamMember, Website, News, Partner } from "./types";
+import { TeamMember, Website, News, Partner, Sponsor } from "./types";
 
 export const teamMembers: TeamMember[] = [
     {
@@ -105,10 +105,18 @@ export const websites: Website[] = [
     }
 ]
 
+export const sponsors: Sponsor[][] = [
+    [{
+        name: "PLCT Lab",
+        logo: "/sponsor-logo/PLCT.svg",
+        link: "https://plctlab.org/"
+    }]
+]
+
 export const partners: Partner[][] = [
     [{
         name: "甲辰计划",
-        logo: "/partner-logo/rv2036.jpg",
+        logo: "/partner-logo/rv2036.png",
         link: "https://rv2036.org/"
     }],
     [{

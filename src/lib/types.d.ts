@@ -18,6 +18,12 @@ export type Website = {
     link: string
 }
 
+export type Sponsor = {
+    name: string
+    logo: string
+    link: string
+}
+
 export type Partner = {
     name: string
     logo: string
