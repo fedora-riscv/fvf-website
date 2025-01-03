@@ -113,14 +113,19 @@ export const websites: Website[] = [
 
 export const partners: Partner[] = [
     {
-        name: "RISC-V",
-        logo: "/partner-logo/riscv.svg",
-        link: "https://riscv.org/"
-    },
-    {
         name: "milkV",
         logo: "/partner-logo/milkv.png",
         link: "https://milkv.io/"
+    },
+    {
+        name: "甲辰计划",
+        logo: "/partner-logo/rv2036.jpg",
+        link: "https://rv2036.org/"
+    },
+    {
+        name: "Sipeed",
+        logo: "/partner-logo/sipeed.png",
+        link: "https://sipeed.com/"
     },
 ]
 
