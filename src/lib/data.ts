@@ -71,17 +71,6 @@ export const teamMembers: TeamMember[] = [
             },
         }
     },
-    {
-        name: "Tianyi Wei",
-        avatarSrc: "/avatars/weitianyi.jpg",
-        company: "USYD",
-        links: {
-            linkedin: {
-                url: "https://www.linkedin.com/in/tianyi-wei-02132b304/",
-                label: "LinkedIn",
-            },
-        }
-    },
 ]
 
 export const websites: Website[] = [
@@ -113,19 +102,24 @@ export const websites: Website[] = [
 
 export const partners: Partner[] = [
     {
-        name: "milkV",
-        logo: "/partner-logo/milkv.png",
-        link: "https://milkv.io/"
-    },
-    {
         name: "甲辰计划",
         logo: "/partner-logo/rv2036.jpg",
         link: "https://rv2036.org/"
     },
     {
+        name: "milkV",
+        logo: "/partner-logo/milkv.png",
+        link: "https://milkv.io/"
+    },
+    {
         name: "Sipeed",
         logo: "/partner-logo/sipeed.png",
         link: "https://sipeed.com/"
+    },
+    {
+        name: "Radxa",
+        logo: "/partner-logo/radxa.png",
+        link: "https://radxa.com/"
     },
 ]
 
