@@ -95,24 +95,28 @@ export function HomePage() {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-4">Our Partners</h2>
-            <div className="flex flex-wrap justify-center items-center gap-24 max-w-4xl mx-auto">
-              {partners.map((partner) => (
-                <div key={partner.name} className="flex-shrink-0 w-full sm:w-auto">
-                  <a
-                    href={partner.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block transition-opacity hover:opacity-80 focus:opacity-80"
-                    aria-label={`${partner.name} Website`}
-                  >
-                    <Image
-                      src={partner.logo}
-                      alt={`${partner.name} logo`}
-                      width={240}
-                      height={80}
-                      className="max-w-full h-auto mx-auto"
-                    />
-                  </a>
+            <div className="flex flex-col gap-16 max-w-4xl mx-auto">
+              {partners.map((partnerList, index) => (
+                <div key={index} className="flex flex-wrap justify-center items-center gap-24">
+                  {partnerList.map((partner) => (
+                    <div key={partner.name} className="flex-shrink-0 w-full sm:w-auto">
+                      <a
+                        href={partner.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block transition-opacity hover:opacity-80 focus:opacity-80"
+                        aria-label={`${partner.name} Website`}
+                      >
+                        <Image
+                          src={partner.logo}
+                          alt={`${partner.name} logo`}
+                          width={240}
+                          height={80}
+                          className="max-w-full h-auto mx-auto"
+                        />
+                      </a>
+                    </div>
+                  ))}
                 </div>
               ))}
             </div>

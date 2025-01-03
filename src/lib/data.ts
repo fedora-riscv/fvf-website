@@ -111,17 +111,17 @@ export const websites: Website[] = [
     }
 ]
 
-export const partners: Partner[] = [
-    {
+export const partners: Partner[][] = [
+    [{
         name: "RISC-V",
         logo: "/partner-logo/riscv.svg",
         link: "https://riscv.org/"
-    },
-    {
+    }],
+    [{
         name: "milkV",
         logo: "/partner-logo/milkv.png",
         link: "https://milkv.io/"
-    },
+    }],
 ]
 
 export const newsList: News[] = [
