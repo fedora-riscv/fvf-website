@@ -71,6 +71,11 @@ export const teamMembers: TeamMember[] = [
             },
         }
     },
+    {
+        name: "Scarlett",
+        avatarSrc: "/avatars/scarlett.jpg",
+        company: "PLCT Lab",
+    },
 ]
 
 export const websites: Website[] = [
