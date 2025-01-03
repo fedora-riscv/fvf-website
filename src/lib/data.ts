@@ -71,17 +71,6 @@ export const teamMembers: TeamMember[] = [
             },
         }
     },
-    {
-        name: "Tianyi Wei",
-        avatarSrc: "/avatars/weitianyi.jpg",
-        company: "USYD",
-        links: {
-            linkedin: {
-                url: "https://www.linkedin.com/in/tianyi-wei-02132b304/",
-                label: "LinkedIn",
-            },
-        }
-    },
 ]
 
 export const websites: Website[] = [
@@ -113,14 +102,24 @@ export const websites: Website[] = [
 
 export const partners: Partner[][] = [
     [{
-        name: "RISC-V",
-        logo: "/partner-logo/riscv.svg",
-        link: "https://riscv.org/"
+        name: "甲辰计划",
+        logo: "/partner-logo/rv2036.jpg",
+        link: "https://rv2036.org/"
     }],
     [{
         name: "milkV",
         logo: "/partner-logo/milkv.png",
         link: "https://milkv.io/"
+    },
+    {
+        name: "Sipeed",
+        logo: "/partner-logo/sipeed.png",
+        link: "https://sipeed.com/"
+    },
+    {
+        name: "Radxa",
+        logo: "/partner-logo/radxa.png",
+        link: "https://radxa.com/"
     }],
 ]
 
@@ -130,6 +129,6 @@ export const newsList: News[] = [
     //   date: "Sep 20, 2024",
     //   content: "Fedora FedoraFedora FedoraFedoraFedoraFedoraFedora FedoraFedoraFedora.",
     // },
-  ]
+]
 
 export const teamIntro = "The Fedora-V Force (FVF, 多啦V盟) is a technical team focused on porting and building the Linux kernel and Fedora distribution based on the RISC-V architecture, as well as firmware development. The team is dedicated to creating a more perfect Fedora distribution and promoting the Linux open-source software ecosystem on RISC-V. Members of the team come from the Fedora community and RISC-V open-source enthusiasts. They have years of technical expertise in firmware, U-Boot, the Linux kernel, Fedora, and other foundational software domains. They are also highly engaged in the RISC-V open architecture and its open-source ecosystem. Under the guidance of RISC-V ambassador Wei Fu, the team maintains the largest Fedora on RISC-V compilation system in China, independently compiling multiple versions from Fedora 36 to rawhide, and adapting all mainstream RISC-V development boards on the market, significantly advancing the process of making RISC-V a major architecture for Fedora. Additionally, the team actively participates in upstreaming open source code, practicing Fedora's \"upstream first\" policy."
