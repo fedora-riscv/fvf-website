@@ -114,11 +114,18 @@ export const sponsors: Sponsor[][] = [
 ]
 
 export const partners: Partner[][] = [
-    [{
-        name: "甲辰计划",
-        logo: "/partner-logo/rv2036.png",
-        link: "https://rv2036.org/"
-    }],
+    [
+        {
+            name: "甲辰计划",
+            logo: "/partner-logo/rv2036.png",
+            link: "https://rv2036.org/"
+        },
+        {
+            name: "苦芽科技",
+            logo: "/partner-logo/kubuds.png",
+            link: "https://kubuds.io/"
+        },
+    ],
     [
     {
         name: "Sipeed",
