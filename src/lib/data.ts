@@ -80,10 +80,10 @@ export const teamMembers: TeamMember[] = [
 
 export const websites: Website[] = [
     {
-        name: "images.fedoravforce.com",
+        name: "images.fedoravforce.org",
         description: "Download Fedora images for your RISC-V hardware.",
         image: "/images-website-screenshot.png?height=300&width=400",
-        link: "https://images.fedoravforce.com/"
+        link: "https://images.fedoravforce.org/"
     },
     {
         name: "Fedora RISC-V Packaging Stats",

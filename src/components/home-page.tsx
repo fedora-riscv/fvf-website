@@ -48,7 +48,7 @@ export function HomePage() {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Fedora-V Force</h2>
               <Button asChild size="lg" className="text-lg">
-                <Link href="https://images.fedoravforce.com/">Download Fedora Images</Link>
+                <Link href="https://images.fedoravforce.org/">Download Fedora Images</Link>
               </Button>
             </div>
           </div>
