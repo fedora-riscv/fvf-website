@@ -92,7 +92,7 @@ export function HomePage() {
           </div>
         </section>
 
-        <section className="py-16 bg-background">
+        {/* <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-4">Our Sponsors</h2>
             <div className="flex flex-col gap-16 max-w-4xl mx-auto">
@@ -121,7 +121,7 @@ export function HomePage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="py-16 bg-muted">
           <div className="container mx-auto px-4">
