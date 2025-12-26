@@ -31,7 +31,6 @@ export const teamMembers: TeamMember[] = [
     {
         name: "Guoguo",
         avatarSrc: "/avatars/guoguo.ico",
-        company: "PLCT Lab",
         links: {
             github: {
                 url: "https://github.com/imguoguo",
@@ -42,39 +41,12 @@ export const teamMembers: TeamMember[] = [
     {
         name: "Milkice",
         avatarSrc: "/avatars/milkice233.jpg",
-        company: "PLCT Lab",
         links: {
             github: {
                 url: "https://github.com/milkice233",
                 label: "@milkice233",
             },
         }
-    },
-    {
-        name: "Ahei",
-        avatarSrc: "/avatars/ahei.jpg",
-        links: {
-            github: {
-                url: "https://github.com/aahei/",
-                label: "@aahei",
-            },
-        }
-    },
-    {
-        name: "catme0w",
-        avatarSrc: "/avatars/catme0w.jpg",
-        company: "PLCT Lab",
-        links: {
-            github: {
-                url: "https://github.com/CatMe0w",
-                label: "@CatMe0w",
-            },
-        }
-    },
-    {
-        name: "Scarlett",
-        avatarSrc: "/avatars/scarlett.jpg",
-        company: "PLCT Lab",
     },
 ]
 
