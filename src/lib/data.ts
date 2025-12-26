@@ -90,10 +90,12 @@ export const partners: Partner[][] = [
         {
             name: "九望",
             logo: "/partner-logo/vsai.png",
+            link: "https://vsit.ai"
         },
         {
             name: "HOX",
             logo: "/partner-logo/hox.png",
+            link: "https://hox.org.cn"
         },
     ],
     [
