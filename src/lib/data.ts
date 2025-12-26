@@ -88,6 +88,16 @@ export const sponsors: Sponsor[][] = [
 export const partners: Partner[][] = [
     [
         {
+            name: "九望",
+            logo: "/partner-logo/vsai.png",
+        },
+        {
+            name: "HOX",
+            logo: "/partner-logo/hox.png",
+        },
+    ],
+    [
+        {
             name: "甲辰计划",
             logo: "/partner-logo/rv2036.png",
             link: "https://rv2036.org/"
@@ -97,23 +107,22 @@ export const partners: Partner[][] = [
             logo: "/partner-logo/kubuds.png",
             link: "https://kubuds.io/"
         },
+        {
+            name: "Sipeed",
+            logo: "/partner-logo/sipeed.png",
+            link: "https://sipeed.com/"
+        },
+        {
+            name: "milkV",
+            logo: "/partner-logo/milkv.png",
+            link: "https://milkv.io/"
+        },
+        {
+            name: "Radxa",
+            logo: "/partner-logo/radxa.png",
+            link: "https://radxa.com/"
+        }
     ],
-    [
-    {
-        name: "Sipeed",
-        logo: "/partner-logo/sipeed.png",
-        link: "https://sipeed.com/"
-    },
-    {
-        name: "milkV",
-        logo: "/partner-logo/milkv.png",
-        link: "https://milkv.io/"
-    },
-    {
-        name: "Radxa",
-        logo: "/partner-logo/radxa.png",
-        link: "https://radxa.com/"
-    }],
 ]
 
 export const newsList: News[] = [
