@@ -20,7 +20,7 @@ export const teamMembers: TeamMember[] = [
     {
         name: "Yang Liu",
         company: "Red Hat",
-        avatarSrc: "/avatars/liuyang.jpg",
+        avatarSrc: "/avatars/liuyang.png",
         links: {
             github: {
                 url: "https://github.com/liuyangxy/",
