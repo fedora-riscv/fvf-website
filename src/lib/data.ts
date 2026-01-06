@@ -20,12 +20,17 @@ export const teamMembers: TeamMember[] = [
     {
         name: "Yang Liu",
         company: "Red Hat",
+        title: "Software Engineer",
         avatarSrc: "/avatars/liuyang.png",
         links: {
             github: {
                 url: "https://github.com/liuyangxy/",
                 label: "@liuyangxy",
-            }
+            },
+            linkedin: {
+                url: "https://www.linkedin.com/in/%E6%B4%8B-%E5%88%98-7a897b36",
+                label: "LinkedIn"
+            },
         }
     },
     {
