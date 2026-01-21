@@ -121,6 +121,11 @@ export const partners: Partner[][] = [
             link: "https://rv2036.org/"
         },
         {
+            name: "进迭时空",
+            logo: "/partner-logo/spacemit.jpg",
+            link: "https://www.spacemit.com"
+        },
+        {
             name: "苦芽科技",
             logo: "/partner-logo/kubuds.png",
             link: "https://kubuds.io/"
