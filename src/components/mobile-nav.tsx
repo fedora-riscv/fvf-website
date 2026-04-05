@@ -33,7 +33,7 @@ export function MobileNav() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md border-t border-border overflow-hidden"
+            className="absolute top-full left-0 right-0 bg-[#0f172a] border-t border-[#ffffff10] overflow-hidden"
           >
             <nav className="flex flex-col py-4 px-6 space-y-1">
               {navLinks.map((link) => (
@@ -41,7 +41,7 @@ export function MobileNav() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="py-3 px-2 text-foreground/70 hover:text-foreground hover:bg-muted rounded-md transition-colors"
+                  className="py-3 px-2 text-[#ffffffb3] hover:text-[#ffffff] hover:bg-[#ffffff0d] rounded-md transition-colors"
                 >
                   {link.label}
                 </Link>
