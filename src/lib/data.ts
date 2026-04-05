@@ -83,7 +83,7 @@ export const websites: Website[] = [
         name: "Our Blog",
         description: "Documentation related to Fedora RISC-V.",
         image: "/blog-website-screenshot.png?height=300&width=400",
-        link: "https://blog.fedoravforce.com/zh/"
+        link: "https://blog.fedoravforce.com"
     },
     {
         name: "Upstream Status",
