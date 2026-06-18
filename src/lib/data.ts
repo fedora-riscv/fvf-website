@@ -35,7 +35,6 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "U2FsdGVkX1",
-        company: "PLCT Lab",
         avatarSrc: "/avatars/U2FsdGVkX1.jpg",
         links: {
             github: {
