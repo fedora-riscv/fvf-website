@@ -104,6 +104,11 @@ export const sponsors: Sponsor[][] = [
 export const partners: Partner[][] = [
     [
         {
+            name: "超睿科技",
+            logo: "/partner-logo/ultrarisc.png",
+            link: "https://www.ultrarisc.com/"
+        },
+        {
             name: "九望",
             logo: "/partner-logo/vsai.svg",
             link: "https://vsit.ai"
