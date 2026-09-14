@@ -19,8 +19,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "Yang Liu",
-        company: "Red Hat",
-        title: "Software Engineer",
+        title: "Fedora Enthusiast",
         avatarSrc: "/avatars/liuyang.png",
         links: {
             github: {
@@ -35,6 +34,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "U2FsdGVkX1",
+        title: "Fedora Packager",
         avatarSrc: "/avatars/U2FsdGVkX1.jpg",
         links: {
             github: {
@@ -45,6 +45,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "Guoguo",
+        title: "Fedora Packager",
         avatarSrc: "/avatars/guoguo.ico",
         links: {
             github: {
