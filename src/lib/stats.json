@@ -1,0 +1,45 @@
+{
+  "source": "https://openkoji.iscas.ac.cn/pub/stats/",
+  "releases": [
+    {
+      "tag": "f42",
+      "rawhide": false,
+      "updated": "2026-09-29 01:47:31",
+      "total": 24544,
+      "built": 22482,
+      "todo": 1877,
+      "port": 32,
+      "hold": 153
+    },
+    {
+      "tag": "f43",
+      "rawhide": false,
+      "updated": "2026-09-29 02:58:37",
+      "total": 25007,
+      "built": 21860,
+      "todo": 2934,
+      "port": 25,
+      "hold": 188
+    },
+    {
+      "tag": "f44",
+      "rawhide": false,
+      "updated": "2026-09-29 03:33:15",
+      "total": 23869,
+      "built": 19610,
+      "todo": 4066,
+      "port": 26,
+      "hold": 167
+    },
+    {
+      "tag": "f45",
+      "rawhide": true,
+      "updated": "2026-09-29 04:07:13",
+      "total": 23700,
+      "built": 18452,
+      "todo": 5032,
+      "port": 42,
+      "hold": 174
+    }
+  ]
+}

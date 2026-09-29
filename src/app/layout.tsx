@@ -1,21 +1,36 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const archivo = localFont({
+  src: "./fonts/ArchivoItalic-VF.woff2",
+  variable: "--font-archivo",
+  weight: "800 900",
+  style: "italic",
+  declarations: [{ prop: "font-stretch", value: "100% 125%" }],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const redHatText = localFont({
+  src: [
+    { path: "./fonts/RedHatText-VF.woff2", style: "normal" },
+    { path: "./fonts/RedHatText-Italic-VF.woff2", style: "italic" },
+  ],
+  variable: "--font-rh-text",
+  weight: "400 600",
+});
+const redHatMono = localFont({
+  src: "./fonts/RedHatMono-VF.woff2",
+  variable: "--font-rh-mono",
+  weight: "400 600",
 });
 
 export const metadata: Metadata = {
   title: "Fedora-V Force",
-  description: "",
+  description: "Fedora-V Force (多啦V盟) ports and builds the Fedora distribution, the Linux kernel and firmware for RISC-V.",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#070D22",
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -24,12 +39,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="en" className={`${archivo.variable} ${redHatText.variable} ${redHatMono.variable}`} suppressHydrationWarning>
+      <head>
+        {/* lets CSS hide scroll-reveal blocks only when JS will reveal them again;
+            if the app never boots (a chunk fails to load), show everything after 4s */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js');setTimeout(function(){if(!window.__fvfReveal)document.documentElement.classList.remove('js')},4000)" }} />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
