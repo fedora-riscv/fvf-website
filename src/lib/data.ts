@@ -1,4 +1,4 @@
-import { TeamMember, Website, News, Partner, Sponsor } from "./types";
+import { TeamMember, Website, News, Partner, Sponsor, Fact } from "./types";
 
 export const teamMembers: TeamMember[] = [
     {
@@ -101,6 +101,7 @@ export const sponsors: Sponsor[][] = [
     }]
 ]
 
+// Partners are tiered: each inner array is one row, and rows get smaller down the page.
 export const partners: Partner[][] = [
     [
         {
@@ -140,6 +141,8 @@ export const partners: Partner[][] = [
             logo: "/partner-logo/sipeed.png",
             link: "https://sipeed.com/"
         },
+    ],
+    [
         {
             name: "milkV",
             logo: "/partner-logo/milkv.png",
@@ -162,3 +165,14 @@ export const newsList: News[] = [
 ]
 
 export const teamIntro = "The Fedora-V Force (FVF, 多啦V盟) is a technical team focused on porting and building the Linux kernel and Fedora distribution based on the RISC-V architecture, as well as firmware development. The team is dedicated to creating a more perfect Fedora distribution and promoting the Linux open-source software ecosystem on RISC-V. Members of the team come from the Fedora community and RISC-V open-source enthusiasts. They have years of technical expertise in firmware, U-Boot, the Linux kernel, Fedora, and other foundational software domains. They are also highly engaged in the RISC-V open architecture and its open-source ecosystem. Under the guidance of RISC-V ambassador Wei Fu, the team maintains the largest Fedora on RISC-V compilation system in China, independently compiling multiple versions from Fedora 36 to rawhide, and adapting all mainstream RISC-V development boards on the market, significantly advancing the process of making RISC-V a major architecture for Fedora. Additionally, the team actively participates in upstreaming open source code, practicing Fedora's \"upstream first\" policy."
+
+
+export const heroTagline = "We port and build the Fedora distribution, the Linux kernel and firmware for riscv64, independently compiling releases from Fedora 36 to rawhide."
+
+export const aboutStatement = "The largest Fedora on RISC-V build system in China, run by people who ship it upstream."
+
+export const facts: Fact[] = [
+    { title: "Fedora 36 → rawhide", text: "Multiple releases independently compiled for riscv64." },
+    { title: "Every major board", text: "Adapted to the mainstream RISC-V development boards on the market." },
+    { title: "Upstream first", text: "Code goes back to upstream projects, following Fedora policy." },
+]

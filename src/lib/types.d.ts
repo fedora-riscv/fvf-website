@@ -35,3 +35,19 @@ export type News = {
     date: string
     content: string
 }
+
+export type Fact = {
+    title: string
+    text: string
+}
+
+export type ReleaseStats = {
+    tag: string
+    rawhide: boolean
+    updated: string
+    total: number
+    built: number
+    todo: number
+    port: number
+    hold: number
+}

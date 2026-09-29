@@ -5,27 +5,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Build & Development Commands
 
 ```bash
-yarn dev          # Start local dev server (Next.js hot reload)
-yarn build        # Production build (static export to ./out)
-yarn start        # Serve production build locally
-yarn lint         # Run ESLint
+npm run dev           # Start local dev server (Next.js hot reload)
+npm run build         # Production build (static export to ./out)
+npm run lint          # Run ESLint
+npm run update-stats  # Refresh src/lib/stats.json from openkoji, then commit it
 ```
 
 ## Architecture
 
-This is a **static-exported Next.js 14** site for the [Fedora-V Force](https://github.com/fedora-riscv/fvf-website) project — a team working on Fedora support for RISC-V architecture.
+A **static-exported Next.js** site for [Fedora-V Force](https://github.com/fedora-riscv/fvf-website), the team porting Fedora to RISC-V.
 
-- **Framework:** Next.js 14 with App Router, TypeScript, React 18
-- **Styling:** Tailwind CSS with CSS variable theming (HSL-based light/dark mode in `globals.css`)
-- **UI Components:** shadcn/ui (Radix UI primitives) in `src/components/ui/`
-- **Static Export:** `output: "export"` in `next.config.mjs` — no SSR, images unoptimized for static hosting
-- **Deployment:** GitHub Actions (`.github/workflows/deploy.yml`) → GitHub Pages
+- **Framework:** Next.js App Router, TypeScript, React. `output: "export"`, images unoptimized.
+- **Styling:** one hand-written stylesheet, `src/app/globals.css` (CSS variables, light/dark via `prefers-color-scheme`). No Tailwind or UI kit.
+- **Fonts:** self-hosted woff2 in `src/app/fonts/` (Archivo italic for display, Red Hat Text, Red Hat Mono). The build never touches the network.
+- **Deployment:** GitHub Actions (`.github/workflows/deploy.yml`) → GitHub Pages.
 
 ## Key Conventions
 
-- **Path alias:** `@/*` maps to `src/*` (configured in `tsconfig.json`)
-- **Data-driven content:** All site content (team members, partner logos, sponsor info, website links) lives in `src/lib/data.ts`. To update site content, edit this file — not the components.
-- **Type definitions:** `src/lib/types.d.ts` defines `TeamMember`, `Website`, `PartnerRow`, `Sponsor`
-- **Component structure:** `src/components/home-page.tsx` is the main page component; `src/components/team-member-card.tsx` renders individual team cards
-- **Static assets:** Avatars in `public/avatars/`, partner logos in `public/partner-logo/`, sponsor logos in `public/sponsor-logo/`
-- **Fonts:** Geist Sans and Geist Mono loaded locally from `src/app/fonts/`
+- **Content lives in `src/lib/data.ts`:** team members, websites, partners, intro and hero copy. Edit that file, not the components.
+- **Partners are tiered:** `partners` is an array of rows (currently 3 + 4 + 2). Row order and membership are deliberate; the first row is shown largest.
+- **Build stats are a committed snapshot:** `src/lib/stats.json` is produced by `scripts/update-stats.mjs` from `https://openkoji.iscas.ac.cn/pub/stats/<tag>_pkg_summary.json`. Nothing is fetched at build or run time.
+- **Hero animation:** `src/components/build-field.tsx` draws one square per package of the selected release on a canvas. It respects `prefers-reduced-motion`.
+- **Static assets:** avatars in `public/avatars/`, partner logos in `public/partner-logo/`, site screenshots in `public/`. Crop logo SVG `viewBox`es to their content, or they render tiny.
