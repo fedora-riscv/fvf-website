@@ -4,7 +4,7 @@
     {
       "tag": "f42",
       "rawhide": false,
-      "updated": "2026-09-29 01:47:31",
+      "updated": "2026-10-05 01:55:46",
       "total": 24544,
       "built": 22482,
       "todo": 1877,
@@ -14,7 +14,7 @@
     {
       "tag": "f43",
       "rawhide": false,
-      "updated": "2026-09-29 02:58:37",
+      "updated": "2026-10-05 03:08:05",
       "total": 25007,
       "built": 21860,
       "todo": 2934,
@@ -24,7 +24,7 @@
     {
       "tag": "f44",
       "rawhide": false,
-      "updated": "2026-09-29 03:33:15",
+      "updated": "2026-10-05 03:45:13",
       "total": 23869,
       "built": 19610,
       "todo": 4066,
@@ -34,10 +34,10 @@
     {
       "tag": "f45",
       "rawhide": true,
-      "updated": "2026-09-29 04:07:13",
+      "updated": "2026-10-05 04:19:11",
       "total": 23700,
-      "built": 18452,
-      "todo": 5032,
+      "built": 18481,
+      "todo": 5003,
       "port": 42,
       "hold": 174
     }

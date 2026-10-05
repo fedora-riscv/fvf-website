@@ -70,25 +70,25 @@ export const websites: Website[] = [
     {
         name: "images.fedoravforce.org",
         description: "Download Fedora images for your RISC-V hardware.",
-        image: "/images-website-screenshot.png?height=300&width=400",
+        image: "/images-website-screenshot.webp?height=300&width=400",
         link: "https://images.fedoravforce.org/"
     },
     {
         name: "Fedora RISC-V Packaging Stats",
         description: "Our progress on Fedora RISC-V packaging.",
-        image: "/stats-website-screenshot.png?height=300&width=400",
+        image: "/stats-website-screenshot.webp?height=300&width=400",
         link: "https://openkoji.iscas.ac.cn/pub/stats/"
     },
     {
         name: "Our Blog",
         description: "Documentation related to Fedora RISC-V.",
-        image: "/blog-website-screenshot.png?height=300&width=400",
+        image: "/blog-website-screenshot.webp?height=300&width=400",
         link: "https://blog.fedoravforce.com"
     },
     {
         name: "Upstream Status",
         description: "Fedora on RISC-V Upstream Status",
-        image: "/upstream-screenshot.png?height=300&width=400",
+        image: "/upstream-screenshot.webp?height=300&width=400",
         link: "https://upstream.fedoravforce.org/"
     }
 ]
