@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 import type { ReleaseStats } from "@/lib/types"
 
 // Every square is one Fedora source package. Statuses: built, not yet, needs porting, on hold.
@@ -30,24 +30,20 @@ function rng(seed: number) {
   }
 }
 
-const pct = (r: ReleaseStats) => ((100 * r.built) / r.total).toFixed(1)
-const fmt = (n: number) => n.toLocaleString("en-US")
 
 type Ripple = { x: number; y: number; t: number; v: number; life: number }
 
-export function BuildField({ releases, statsSource, children }: { releases: ReleaseStats[]; statsSource: string; children: React.ReactNode }) {
+// The squares only show the mix of build states; no figures are printed, since the
+// snapshot is only as fresh as the last `npm run update-stats`.
+export function BuildField({ release: rel, children }: { release: ReleaseStats; children: React.ReactNode }) {
   const sectionRef = useRef<HTMLElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const pctRef = useRef<HTMLSpanElement>(null)
-  const subRef = useRef<HTMLElement>(null)
-  const [current, setCurrent] = useState(0)
 
   useEffect(() => {
     const section = sectionRef.current!
     const canvas = canvasRef.current!
     const ctx = canvas.getContext("2d")
     if (!ctx) return
-    const rel = releases[current]
     const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches
 
     let W = 0, H = 0, P = 0
@@ -134,11 +130,10 @@ export function BuildField({ releases, statsSource, children }: { releases: Rele
         ctx.drawImage(baseLayer, 0, 0, W, H)
       }
       // highlights: intro wavefront, ripples, pointer lamp
-      let lit = 0
       for (let i = 0; i < n; i++) {
         let h = 0
         const k = (el - start[i]) / CELL_FADE_MS
-        if (k >= 0) { if (status[i] === 0) lit++; if (k < 1 && status[i] !== 1) h = 1 - k }
+        if (k >= 0 && k < 1 && status[i] !== 1) h = 1 - k
         for (const r of ripples) {
           const age = (now - r.t) / 1000, R = age * r.v
           const dx = cx[i] - r.x, dy = cy[i] - r.y
@@ -155,9 +150,6 @@ export function BuildField({ releases, statsSource, children }: { releases: Rele
         ctx.fillRect(cx[i] - z / 2, cy[i] - z / 2, z, z)
       }
       ripples = ripples.filter((r) => (now - r.t) / 1000 < r.life)
-      const shown = reduce ? rel.built : Math.min(rel.built, lit)
-      if (pctRef.current) pctRef.current.textContent = ((100 * shown) / n).toFixed(1) + "%"
-      if (subRef.current) subRef.current.textContent = `${fmt(shown)} of ${fmt(n)} packages`
       if (!reduce && visible && !document.hidden) raf = requestAnimationFrame(frame)
     }
     const loop = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(frame) }
@@ -206,9 +198,8 @@ export function BuildField({ releases, statsSource, children }: { releases: Rele
       section.removeEventListener("pointerleave", onLeave)
       section.removeEventListener("pointerdown", onDown)
     }
-  }, [current, releases])
+  }, [rel])
 
-  const rel = releases[current]
   return (
     <section className="hero" ref={sectionRef}>
       <canvas ref={canvasRef} role="img" aria-label="Every Fedora source package as a square, lit when built for riscv64" />
@@ -219,21 +210,6 @@ export function BuildField({ releases, statsSource, children }: { releases: Rele
       </div>
       <div className="wrap hero-in">
         {children}
-        <div className="rail">
-          <div className="now">
-            <span className="l">{rel.tag}{rel.rawhide ? " rawhide" : ""} · built for riscv64</span>
-            <span className="big" ref={pctRef}>{pct(rel)}%</span>
-            <small ref={subRef}>{fmt(rel.built)} of {fmt(rel.total)} packages</small>
-            <span className="asof">as of {rel.updated.slice(0, 10)} · <a href={statsSource} target="_blank" rel="noopener noreferrer">openkoji stats</a></span>
-          </div>
-          {releases.map((r, i) => (
-            <button key={r.tag} className="rel" aria-pressed={i === current} onClick={() => setCurrent(i)}>
-              <span className="n">{r.tag}{r.rawhide && <em>rawhide</em>}</span>
-              <span className="p">{pct(r)}%</span>
-              <span className="bar"><i style={{ width: `${pct(r)}%` }} /></span>
-            </button>
-          ))}
-        </div>
       </div>
     </section>
   )
