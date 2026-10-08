@@ -24,6 +24,6 @@ A **static-exported Next.js** site for [Fedora-V Force](https://github.com/fedor
 
 - **Content lives in `src/lib/data.ts`:** team members, websites, partners, intro and hero copy. Edit that file, not the components.
 - **Partners are tiered:** `partners` is an array of rows (currently 3 + 4 + 2). Row order and membership are deliberate; the first row is shown largest.
-- **Build stats are a committed snapshot:** `src/lib/stats.json` is produced by `scripts/update-stats.mjs` from `https://openkoji.iscas.ac.cn/pub/stats/<tag>_pkg_summary.json`. Nothing is fetched at build or run time.
+- **Build stats are a committed snapshot:** `src/lib/stats.json` is produced by `scripts/update-stats.mjs` from `https://openkoji.iscas.ac.cn/pub/stats/<tag>_pkg_summary.json`. Nothing is fetched at build or run time, so the page never prints the figures; they only set the colour mix of the hero animation.
 - **Hero animation:** `src/components/build-field.tsx` draws one square per package of the selected release on a canvas. It respects `prefers-reduced-motion`.
 - **Static assets:** avatars in `public/avatars/`, partner logos in `public/partner-logo/`, site screenshots in `public/`. Crop logo SVG `viewBox`es to their content, or they render tiny.

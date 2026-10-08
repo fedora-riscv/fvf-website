@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <SiteHeader />
       <main>
-        <BuildField releases={stats.releases} statsSource={stats.source}>
+        <BuildField release={stats.releases[0]}>
           <div className="kicker">
             <span className="dot" />
             <span>$ uname -m <b>riscv64</b></span>

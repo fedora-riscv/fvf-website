@@ -13,4 +13,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 头像放在 `public/avatars`，合作伙伴 logo 放在 `public/partner-logo`。
 
-首页的打包统计来自 `src/lib/stats.json`，运行 `npm run update-stats` 更新后提交即可。
+首页动画的配色比例来自 `src/lib/stats.json`（页面不显示具体数字），运行 `npm run update-stats` 更新后提交即可。
