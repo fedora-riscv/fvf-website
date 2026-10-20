@@ -23,6 +23,20 @@ const nextConfig = {
     images: {
       unoptimized: true,
     },
+
+    /**
+     * Emit /zh/index.html rather than /zh.html, so GitHub Pages serves both
+     * /zh and /zh/ (it redirects the former to the latter).
+     */
+    trailingSlash: true,
+
+    /**
+     * Each locale is its own root layout, so there is no shared layout for the
+     * 404 page to inherit; src/app/global-not-found.tsx provides one.
+     */
+    experimental: {
+      globalNotFound: true,
+    },
   };
   
 

@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "title": "Fedora-V Force",
+    "description": "Fedora-V Force (多啦V盟) ports and builds the Fedora distribution, the Linux kernel and firmware for RISC-V."
+  },
+  "header": {
+    "nav": {
+      "about": "About",
+      "websites": "Websites",
+      "partners": "Partners",
+      "team": "Team",
+      "contact": "Contact"
+    },
+    "home": "Fedora-V Force home",
+    "download": "Download",
+    "menu": "Menu",
+    "switchTo": "Switch to English"
+  },
+  "hero": {
+    "kicker": "多啦V盟",
+    "lines": [
+      "Fedora,",
+      "rebuilt for",
+      "RISC-V."
+    ],
+    "accent": "RISC-V.",
+    "tagline": "We port and build the Fedora distribution, the Linux kernel and firmware for riscv64, independently compiling releases from Fedora 36 to rawhide.",
+    "downloadImages": "Download images",
+    "canvas": "Every Fedora source package as a square, lit when built for riscv64",
+    "legend": {
+      "title": "every square is one Fedora package",
+      "built": "built",
+      "todo": "not yet",
+      "port": "needs porting",
+      "hold": "on hold"
+    }
+  },
+  "about": {
+    "eyebrow": "About us",
+    "statement": "The largest Fedora on RISC-V build system in China, run by people who ship it upstream.",
+    "highlight": "Fedora on RISC-V",
+    "intro": "The Fedora-V Force (FVF, 多啦V盟) is a technical team focused on porting and building the Linux kernel and Fedora distribution based on the RISC-V architecture, as well as firmware development. The team is dedicated to creating a more perfect Fedora distribution and promoting the Linux open-source software ecosystem on RISC-V. Members of the team come from the Fedora community and RISC-V open-source enthusiasts. They have years of technical expertise in firmware, U-Boot, the Linux kernel, Fedora, and other foundational software domains. They are also highly engaged in the RISC-V open architecture and its open-source ecosystem. Under the guidance of RISC-V ambassador Wei Fu, the team maintains the largest Fedora on RISC-V compilation system in China, independently compiling multiple versions from Fedora 36 to rawhide, and adapting all mainstream RISC-V development boards on the market, significantly advancing the process of making RISC-V a major architecture for Fedora. Additionally, the team actively participates in upstreaming open source code, practicing Fedora's \"upstream first\" policy.",
+    "facts": [
+      {
+        "title": "Fedora 36 → rawhide",
+        "text": "Multiple releases independently compiled for riscv64."
+      },
+      {
+        "title": "Every major board",
+        "text": "Adapted to the mainstream RISC-V development boards on the market."
+      },
+      {
+        "title": "Upstream first",
+        "text": "Code goes back to upstream projects, following Fedora policy."
+      }
+    ]
+  },
+  "websites": {
+    "eyebrow": "Resources",
+    "title": "Our websites.",
+    "screenshot": "{name} screenshot",
+    "items": {
+      "images": {
+        "name": "images.fedoravforce.org",
+        "description": "Download Fedora images for your RISC-V hardware."
+      },
+      "stats": {
+        "name": "Fedora RISC-V Packaging Stats",
+        "description": "Our progress on Fedora RISC-V packaging."
+      },
+      "blog": {
+        "name": "Our Blog",
+        "description": "Documentation related to Fedora RISC-V."
+      },
+      "upstream": {
+        "name": "Upstream Status",
+        "description": "Fedora on RISC-V Upstream Status"
+      }
+    }
+  },
+  "partners": {
+    "eyebrow": "Ecosystem",
+    "title": "Our partners.",
+    "site": "{name} Website",
+    "logo": "{name} logo"
+  },
+  "team": {
+    "eyebrow": "People",
+    "title": "Team members.",
+    "memberOn": "{name} on {site}",
+    "roles": {
+      "principalEngineer": "Principal Software Engineer",
+      "enthusiast": "Fedora Enthusiast",
+      "packager": "Fedora Packager"
+    },
+    "companies": {
+      "redhat": "Red Hat"
+    }
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "lines": [
+      "Bring a board.",
+      "We'll bring Fedora."
+    ],
+    "accent": "Fedora.",
+    "email": "EMAIL",
+    "emailAlt": "Email Address"
+  },
+  "footer": {
+    "rights": "© 2026 Fedora-V Force. All rights reserved.",
+    "blog": "Blog",
+    "downloads": "Downloads"
+  }
+}

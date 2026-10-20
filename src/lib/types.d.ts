@@ -1,7 +1,9 @@
+import type { Messages } from "./i18n"
+
 export type TeamMember = {
     name: string
-    title?: string
-    company?: string
+    role?: keyof Messages["team"]["roles"]
+    company?: keyof Messages["team"]["companies"]
     avatarSrc: string
     links?: {
         [key: string]: {
@@ -12,8 +14,7 @@ export type TeamMember = {
 }
 
 export type Website = {
-    name: string
-    description: string
+    id: keyof Messages["websites"]["items"]
     image: string
     link: string
 }
@@ -34,11 +35,6 @@ export type News = {
     title: string
     date: string
     content: string
-}
-
-export type Fact = {
-    title: string
-    text: string
 }
 
 export type ReleaseStats = {

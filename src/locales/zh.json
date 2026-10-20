@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "title": "多啦V盟 Fedora-V Force",
+    "description": "多啦V盟（Fedora-V Force）为 RISC-V 移植并构建 Fedora 发行版、Linux 内核与固件。"
+  },
+  "header": {
+    "nav": {
+      "about": "关于",
+      "websites": "网站",
+      "partners": "伙伴",
+      "team": "团队",
+      "contact": "联系"
+    },
+    "home": "Fedora-V Force 首页",
+    "download": "下载",
+    "menu": "菜单",
+    "switchTo": "切换到中文"
+  },
+  "hero": {
+    "kicker": "Fedora-V Force",
+    "lines": [
+      "Fedora，",
+      "为 RISC-V",
+      "重新构建。"
+    ],
+    "accent": "RISC-V",
+    "tagline": "我们为 riscv64 移植并构建 Fedora 发行版、Linux 内核与固件，独立编译从 Fedora 36 到 rawhide 的各个版本。",
+    "downloadImages": "下载镜像",
+    "canvas": "每个 Fedora 源码包是一个方块，构建出 riscv64 版本后点亮",
+    "legend": {
+      "title": "每个方块代表一个 Fedora 软件包",
+      "built": "已构建",
+      "todo": "未构建",
+      "port": "需移植",
+      "hold": "已搁置"
+    }
+  },
+  "about": {
+    "eyebrow": "关于我们",
+    "statement": "国内最大的 Fedora on RISC-V 构建系统，由坚持回馈上游的人维护。",
+    "highlight": "Fedora on RISC-V",
+    "intro": "多啦V盟（Fedora-V Force，FVF）是一支专注于基于 RISC-V 架构的 Linux 内核与 Fedora 发行版移植、构建以及固件开发的技术团队，致力于打造更完善的 Fedora 发行版，推动 RISC-V 上的 Linux 开源软件生态。团队成员来自 Fedora 社区和 RISC-V 开源爱好者，在固件、U-Boot、Linux 内核、Fedora 等基础软件领域有多年技术积累，并深度参与 RISC-V 开放架构及其开源生态。在 RISC-V 大使 Wei Fu 的指导下，团队维护着国内最大的 Fedora on RISC-V 编译系统，独立编译了从 Fedora 36 到 rawhide 的多个版本，适配了市面上所有主流 RISC-V 开发板，大力推进 RISC-V 成为 Fedora 主要架构的进程。此外，团队积极参与开源代码的上游工作，践行 Fedora「上游优先」的理念。",
+    "facts": [
+      {
+        "title": "Fedora 36 → rawhide",
+        "text": "独立为 riscv64 编译多个发行版本。"
+      },
+      {
+        "title": "覆盖主流开发板",
+        "text": "适配市面上主流的 RISC-V 开发板。"
+      },
+      {
+        "title": "上游优先",
+        "text": "遵循 Fedora 政策，代码回馈上游项目。"
+      }
+    ]
+  },
+  "websites": {
+    "eyebrow": "资源",
+    "title": "我们的网站",
+    "screenshot": "{name} 截图",
+    "items": {
+      "images": {
+        "name": "images.fedoravforce.org",
+        "description": "为你的 RISC-V 硬件下载 Fedora 镜像。"
+      },
+      "stats": {
+        "name": "Fedora RISC-V 打包统计",
+        "description": "我们在 Fedora RISC-V 打包上的进度。"
+      },
+      "blog": {
+        "name": "博客",
+        "description": "Fedora RISC-V 相关文档。"
+      },
+      "upstream": {
+        "name": "上游状态",
+        "description": "Fedora on RISC-V 上游进展"
+      }
+    }
+  },
+  "partners": {
+    "eyebrow": "生态",
+    "title": "合作伙伴",
+    "site": "{name} 官网",
+    "logo": "{name} 标志"
+  },
+  "team": {
+    "eyebrow": "成员",
+    "title": "团队成员",
+    "memberOn": "{name} 的 {site}",
+    "roles": {
+      "principalEngineer": "首席软件工程师",
+      "enthusiast": "Fedora 爱好者",
+      "packager": "Fedora 打包者"
+    },
+    "companies": {
+      "redhat": "红帽"
+    }
+  },
+  "contact": {
+    "eyebrow": "联系我们",
+    "lines": [
+      "你带上板子，",
+      "我们带上 Fedora。"
+    ],
+    "accent": "Fedora",
+    "email": "邮箱",
+    "emailAlt": "邮箱地址"
+  },
+  "footer": {
+    "rights": "© 2026 Fedora-V Force（多啦V盟）保留所有权利。",
+    "blog": "博客",
+    "downloads": "下载"
+  }
+}
