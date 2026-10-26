@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import type { ReleaseStats } from "@/lib/types"
+import type { Messages } from "@/lib/i18n"
 
 // Every square is one Fedora source package. Statuses: built, not yet, needs porting, on hold.
 const BASE = ["#2E78C2", "#131F48", "#E0A10E", "#46507A"]
@@ -35,7 +36,7 @@ type Ripple = { x: number; y: number; t: number; v: number; life: number }
 
 // The squares only show the mix of build states; no figures are printed, since the
 // snapshot is only as fresh as the last `npm run update-stats`.
-export function BuildField({ release: rel, children }: { release: ReleaseStats; children: React.ReactNode }) {
+export function BuildField({ release: rel, label, legend: lg, children }: { release: ReleaseStats; label: string; legend: Messages["hero"]["legend"]; children: React.ReactNode }) {
   const sectionRef = useRef<HTMLElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
@@ -202,11 +203,11 @@ export function BuildField({ release: rel, children }: { release: ReleaseStats; 
 
   return (
     <section className="hero" ref={sectionRef}>
-      <canvas ref={canvasRef} role="img" aria-label="Every Fedora source package as a square, lit when built for riscv64" />
+      <canvas ref={canvasRef} role="img" aria-label={label} />
       <div className="scrim" />
       <div className="hint">
-        every square is one Fedora package<br />
-        <i style={{ background: BASE[0] }} />built<i style={{ background: BASE[1], outline: "1px solid #34437A" }} />not yet<i style={{ background: BASE[2] }} />needs porting<i style={{ background: BASE[3] }} />on hold
+        {lg.title}<br />
+        <i style={{ background: BASE[0] }} />{lg.built}<i style={{ background: BASE[1], outline: "1px solid #34437A" }} />{lg.todo}<i style={{ background: BASE[2] }} />{lg.port}<i style={{ background: BASE[3] }} />{lg.hold}
       </div>
       <div className="wrap hero-in">
         {children}

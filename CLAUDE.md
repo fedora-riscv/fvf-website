@@ -22,7 +22,9 @@ A **static-exported Next.js** site for [Fedora-V Force](https://github.com/fedor
 
 ## Key Conventions
 
-- **Content lives in `src/lib/data.ts`:** team members, websites, partners, intro and hero copy. Edit that file, not the components.
+- **Text lives in `src/locales/<lang>.json`** (`en.json`, `zh.json`): every visible string, including intro, facts, website names and member roles. `src/lib/data.ts` holds only language-independent data (links, avatars, logos, and keys such as a member's `role` or a website's `id` that point into the JSON). `zh.json` is type-checked against `en.json`, so a missing key fails the build.
+- **i18n:** English is served at `/`, Chinese at `/zh/` (`trailingSlash: true`). Each locale has its own root layout under a route group (`src/app/(en)`, `src/app/(zh)`) so the static HTML has the right `<html lang>` and hreflang links. The switch in the header works in place: `home.tsx` swaps the messages and calls `history.pushState`, with no page reload. To add a language, add its JSON, register it in `src/lib/i18n.ts`, and add a route group.
+- **Language detection:** an inline script on `/` redirects to the saved choice (`localStorage["fvf-lang"]`, set by the switch) or, on a first visit, to the browser's preferred language. Locale URLs such as `/zh/` never redirect.
 - **Partners are tiered:** `partners` is an array of rows (currently 3 + 4 + 2). Row order and membership are deliberate; the first row is shown largest.
 - **Build stats are a committed snapshot:** `src/lib/stats.json` is produced by `scripts/update-stats.mjs` from `https://openkoji.iscas.ac.cn/pub/stats/<tag>_pkg_summary.json`. Nothing is fetched at build or run time, so the page never prints the figures; they only set the colour mix of the hero animation.
 - **Hero animation:** `src/components/build-field.tsx` draws one square per package of the selected release on a canvas. It respects `prefers-reduced-motion`.

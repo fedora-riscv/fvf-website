@@ -1,10 +1,11 @@
-import { TeamMember, Website, News, Partner, Sponsor, Fact } from "./types";
+// Language-independent data. Every visible string lives in src/locales/<lang>.json.
+import { TeamMember, Website, News, Partner, Sponsor } from "./types";
 
 export const teamMembers: TeamMember[] = [
     {
         name: "Wei Fu",
-        title: "Principal Software Engineer",
-        company: "Red Hat",
+        role: "principalEngineer",
+        company: "redhat",
         avatarSrc: "/avatars/fuwei.jpg",
         links: {
             github: {
@@ -19,7 +20,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "Yang Liu",
-        title: "Fedora Enthusiast",
+        role: "enthusiast",
         avatarSrc: "/avatars/liuyang.png",
         links: {
             github: {
@@ -34,7 +35,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "U2FsdGVkX1",
-        title: "Fedora Packager",
+        role: "packager",
         avatarSrc: "/avatars/U2FsdGVkX1.jpg",
         links: {
             github: {
@@ -45,7 +46,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "Guoguo",
-        title: "Fedora Packager",
+        role: "packager",
         avatarSrc: "/avatars/guoguo.ico",
         links: {
             github: {
@@ -68,26 +69,22 @@ export const teamMembers: TeamMember[] = [
 
 export const websites: Website[] = [
     {
-        name: "images.fedoravforce.org",
-        description: "Download Fedora images for your RISC-V hardware.",
+        id: "images",
         image: "/images-website-screenshot.webp?height=300&width=400",
         link: "https://images.fedoravforce.org/"
     },
     {
-        name: "Fedora RISC-V Packaging Stats",
-        description: "Our progress on Fedora RISC-V packaging.",
+        id: "stats",
         image: "/stats-website-screenshot.webp?height=300&width=400",
         link: "https://openkoji.iscas.ac.cn/pub/stats/"
     },
     {
-        name: "Our Blog",
-        description: "Documentation related to Fedora RISC-V.",
+        id: "blog",
         image: "/blog-website-screenshot.webp?height=300&width=400",
         link: "https://blog.fedoravforce.com"
     },
     {
-        name: "Upstream Status",
-        description: "Fedora on RISC-V Upstream Status",
+        id: "upstream",
         image: "/upstream-screenshot.webp?height=300&width=400",
         link: "https://upstream.fedoravforce.org/"
     }
@@ -162,17 +159,4 @@ export const newsList: News[] = [
     //   date: "Sep 20, 2024",
     //   content: "Fedora FedoraFedora FedoraFedoraFedoraFedoraFedora FedoraFedoraFedora.",
     // },
-]
-
-export const teamIntro = "The Fedora-V Force (FVF, 多啦V盟) is a technical team focused on porting and building the Linux kernel and Fedora distribution based on the RISC-V architecture, as well as firmware development. The team is dedicated to creating a more perfect Fedora distribution and promoting the Linux open-source software ecosystem on RISC-V. Members of the team come from the Fedora community and RISC-V open-source enthusiasts. They have years of technical expertise in firmware, U-Boot, the Linux kernel, Fedora, and other foundational software domains. They are also highly engaged in the RISC-V open architecture and its open-source ecosystem. Under the guidance of RISC-V ambassador Wei Fu, the team maintains the largest Fedora on RISC-V compilation system in China, independently compiling multiple versions from Fedora 36 to rawhide, and adapting all mainstream RISC-V development boards on the market, significantly advancing the process of making RISC-V a major architecture for Fedora. Additionally, the team actively participates in upstreaming open source code, practicing Fedora's \"upstream first\" policy."
-
-
-export const heroTagline = "We port and build the Fedora distribution, the Linux kernel and firmware for riscv64, independently compiling releases from Fedora 36 to rawhide."
-
-export const aboutStatement = "The largest Fedora on RISC-V build system in China, run by people who ship it upstream."
-
-export const facts: Fact[] = [
-    { title: "Fedora 36 → rawhide", text: "Multiple releases independently compiled for riscv64." },
-    { title: "Every major board", text: "Adapted to the mainstream RISC-V development boards on the market." },
-    { title: "Upstream first", text: "Code goes back to upstream projects, following Fedora policy." },
 ]
