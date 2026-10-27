@@ -39,7 +39,7 @@
     "eyebrow": "关于我们",
     "statement": "国内最大的 Fedora on RISC-V 构建系统，由坚持回馈上游的人维护。",
     "highlight": "Fedora on RISC-V",
-    "intro": "多啦V盟（Fedora-V Force，FVF）是一支专注于基于 RISC-V 架构的 Linux 内核与 Fedora 发行版移植、构建以及固件开发的技术团队，致力于打造更完善的 Fedora 发行版，推动 RISC-V 上的 Linux 开源软件生态。团队成员来自 Fedora 社区和 RISC-V 开源爱好者，在固件、U-Boot、Linux 内核、Fedora 等基础软件领域有多年技术积累，并深度参与 RISC-V 开放架构及其开源生态。在 RISC-V 大使 Wei Fu 的指导下，团队维护着国内最大的 Fedora on RISC-V 编译系统，独立编译了从 Fedora 36 到 rawhide 的多个版本，适配了市面上所有主流 RISC-V 开发板，大力推进 RISC-V 成为 Fedora 主要架构的进程。此外，团队积极参与开源代码的上游工作，践行 Fedora「上游优先」的理念。",
+    "intro": "多啦V盟（Fedora-V Force，FVF）是一支专注于基于 RISC-V 架构的 Linux 内核与 Fedora 发行版移植、构建以及固件开发的技术团队，致力于打造更完善的 Fedora 发行版，推动 RISC-V 上的 Linux 开源软件生态。团队成员来自 Fedora 社区和 RISC-V 开源爱好者，在固件、U-Boot、Linux 内核、Fedora 等基础软件领域有多年技术积累，并深度参与 RISC-V 开放架构及其开源生态。在 RISC-V 大使傅炜的指导下，团队维护着国内最大的 Fedora on RISC-V 编译系统，独立编译了从 Fedora 36 到 rawhide 的多个版本，适配了市面上所有主流 RISC-V 开发板，大力推进 RISC-V 成为 Fedora 主要架构的进程。此外，团队积极参与开源代码的上游工作，践行 Fedora「上游优先」的理念。",
     "facts": [
       {
         "title": "Fedora 36 → rawhide",
